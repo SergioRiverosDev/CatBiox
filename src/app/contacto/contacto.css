@@ -1,0 +1,138 @@
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 100vw;
+    object-fit: cover;
+}
+section{
+    margin-top: -60px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h1{
+    width: 30%;
+    font-size: 3rem;
+    margin: 0 auto;
+}
+.haz-pedido{
+    margin: 20px 0;
+}
+p{
+    color: rgb(97, 97, 97);
+}
+.boton{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    font-size: 1.1rem;
+    background: rgba(37, 168, 65, 0.753);
+    color: white;
+    border: none;border-radius: 8px;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+.boton:hover {
+    background: rgb(4, 143, 39);
+    transition: all 0.1s ease-in-out;
+}
+.datos{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1.2rem;
+}
+.datos a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: rgba(0, 109, 24, 0.753);
+    margin-bottom: 1px;
+}
+.informacion{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+    align-items: center;
+}
+.informacion svg{
+    color: rgba(0, 109, 24, 0.753);
+}
+
+
+@media (max-width: 1024px) {
+
+    section{
+        margin: 0;
+    }
+  h1 {
+    width: 60%;
+    font-size: 2.5rem;
+  }
+
+  .informacion {
+    gap: 2rem;
+  }
+
+  .boton {
+    font-size: 1rem;
+    padding: 12px 20px;
+    background: rgb(4, 143, 39);
+  }
+}
+
+/* --- Celulares grandes --- */
+@media (max-width: 768px) {
+  h1 {
+    width: 80%;
+    font-size: 2rem;
+  }
+
+  .haz-pedido {
+    font-size: 1rem;
+    margin: 15px 0;
+  }
+
+  .datos {
+    gap: 3rem;
+
+  }
+
+  .informacion {
+    gap: 1rem;
+    padding: 0 10px;
+  }
+
+  .boton {
+    width: 80%;
+  }
+}
+
+/* --- Celulares pequeños --- */
+@media (max-width: 480px) {
+  h1 {
+    width: 90%;
+    font-size: 1.7rem;
+  }
+
+  p, .haz-pedido {
+    font-size: 0.95rem;
+  }
+
+  .boton {
+    width: 90%;
+    font-size: 1rem;
+  }
+
+  .datos {
+    padding: 1rem;
+  }
+}
